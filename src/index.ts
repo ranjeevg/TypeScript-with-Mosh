@@ -41,6 +41,6 @@ let sales: number = 123_456_789,
     // Moving on beyond that paakhand:
     // let's have a look at how TS functions work.
 
-    function sampleFunction(sampleData) {
-        
+    function sampleFunction(sampleData: number) {
+
     }
