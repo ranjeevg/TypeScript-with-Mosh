@@ -53,6 +53,9 @@ let sales: number = 123_456_789,
     }
 
     // ... and yet they allow this? Hmm.
+    // ... actually,, best to allow the option in the case 
+    //     the user has to migrate old JS code where no 
+    //     data type matches. 
     function a(b:any) {
 
     }
