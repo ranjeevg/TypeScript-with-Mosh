@@ -38,3 +38,9 @@ let sales: number = 123_456_789,
     level = 1;
     level = 'a';
 
+    // Moving on beyond that paakhand:
+    // let's have a look at how TS functions work.
+
+    function sampleFunction(sampleData) {
+        
+    }
