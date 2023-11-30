@@ -59,3 +59,23 @@ let sales: number = 123_456_789,
     function a(b:any) {
 
     }
+
+    // ... moving on.
+    // Arrays:
+
+    // Vanilla JS would allow an array like so:
+    // let numbers = [1,2,'3'];
+    // because JavaScript.
+
+    // TypeScript arrays work differently:
+    let numbers: number[] = [1,2,3];
+
+    // again, with regular types,
+    // we could have skipped the type annotation there.
+    let nums = [1,2,3];
+
+    // Moving on to tuples:
+    // a specific array (an n-tuple) 
+    // where each index value is of a specific type.
+    // also of a fixed length.
+    let tuple0: [number, string] = [1, 'Ranjeev'];

@@ -8,4 +8,7 @@ function sampleFunction(sampleData) {
 }
 function a(b) {
 }
+let numbers = [1, 2, 3];
+let nums = [1, 2, 3];
+let tuple0 = [1, 'Ranjeev'];
 //# sourceMappingURL=index.js.map
