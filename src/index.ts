@@ -87,8 +87,5 @@ let sales: number = 123_456_789,
     enum Size { Small, Medium, Large, Extra };
 
     // However, if we need to set up custom values:
-    enum Sizer { 
-                    Help = 0, 
-                    Me = 69, 
-                    NoticeMePapaFlammy = 420
+    enum Sizer { Help = 0, Me = 69, NoticeMePapaFlammy = 420
                 };
