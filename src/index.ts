@@ -41,6 +41,18 @@ let sales: number = 123_456_789,
     // Moving on beyond that paakhand:
     // let's have a look at how TS functions work.
 
+    // best practice is to annotate the function argument type,
+    // or else the compiler implicitly assumes it to be an any type.
+    // By default, the TypeScript compiler doesn't allow that; 
+    // either annotate the argument, 
+    // or set the 'NoImplicitAny' property in tsconfig.json to false.
     function sampleFunction(sampleData: number) {
+        
+        // because why not?
+        return Math.pow(sampleData, 3);
+    }
+
+    // ... and yet they allow this? Hmm.
+    function a(b:any) {
 
     }
