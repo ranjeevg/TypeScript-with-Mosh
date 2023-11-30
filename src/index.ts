@@ -79,3 +79,16 @@ let sales: number = 123_456_789,
     // where each index value is of a specific type.
     // also of a fixed length.
     let tuple0: [number, string] = [1, 'Ranjeev'];
+
+    // enums
+    // basically like C# enums
+    // if you don't specify sizes, 
+    // the compiler assumes 0-based incremental values.
+    enum Size { Small, Medium, Large, Extra };
+
+    // However, if we need to set up custom values:
+    enum Sizer { 
+                    Help = 0, 
+                    Me = 69, 
+                    NoticeMePapaFlammy = 420
+                };
