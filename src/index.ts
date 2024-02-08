@@ -91,27 +91,27 @@ enum Sizer { Help = 0, Me = 1, NoticeMePapaFlammy = 69420 };
 
 // get keys for enum above
 // annotate the type as a matter of good habit.
-let sizer_keys: String[] = Object.keys(Sizer);
+// let sizer_keys: String[] = Object.keys(Sizer);
 
-// apparently, to hack around the double values shown:
-sizer_keys = sizer_keys
-    .filter(e => isNaN(Number(e)));
+// // apparently, to hack around the double values shown:
+// sizer_keys = sizer_keys
+//     .filter(e => isNaN(Number(e)));
 
-// iterating over the fetched keys
-sizer_keys.forEach((key, index) => {
-    // apparently the Object.keys method returns both the key and the value, in pairs.
-    // and apparently the syntax for reading a string value in a string literal is different too.
-    console.log(`Entry ${key} has an index of ${index}.`);
-});
+// // iterating over the fetched keys
+// sizer_keys.forEach((key, index) => {
+//     // apparently the Object.keys method returns both the key and the value, in pairs.
+//     // and apparently the syntax for reading a string value in a string literal is different too.
+//     console.log(`Entry ${key} has an index of ${index}.`);
+// });
 
-// now for the values.
-let sizer_values = Object.values(Sizer)
-    .filter(v => !isNaN(Number(v))); // adjust according to what's needed.
-console.log('\n');
+// // now for the values.
+// let sizer_values = Object.values(Sizer)
+//     .filter(v => !isNaN(Number(v))); // adjust according to what's needed.
+// console.log('\n');
 
-sizer_values.forEach(v => {
-    console.log(`Values, correspondingly: ${v}`);
-});
+// sizer_values.forEach(v => {
+//     console.log(`Values, correspondingly: ${v}`);
+// });
 
 // we're beginning to get to typescript types
 // example: setting an instance of type Sizer
@@ -119,4 +119,6 @@ sizer_values.forEach(v => {
 let customSize: Sizer = Sizer.NoticeMePapaFlammy;
 
 console.log(customSize);
+
+
 
