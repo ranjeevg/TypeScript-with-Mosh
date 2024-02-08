@@ -84,10 +84,10 @@
 // basically like C# enums
 // if you don't specify sizes, 
 // the compiler assumes 0-based incremental values.
-enum Size { Small, Medium, Large, Extra };
+// const enum Size { Small, Medium, Large, Extra };
 
 // for the memes
-enum Sizer { Help = 0, Me = 1, NoticeMePapaFlammy = 69420 };
+const enum Sizer { Help = 0, Me = 1, NoticeMePapaFlammy = 69420 };
 
 // get keys for enum above
 // annotate the type as a matter of good habit.
@@ -120,5 +120,4 @@ let customSize: Sizer = Sizer.NoticeMePapaFlammy;
 
 console.log(customSize);
 
-
-
+// note: he mentioned that setting the enums as consts in TS optimizes the generated JS file. I've done that for the enums we've used.
