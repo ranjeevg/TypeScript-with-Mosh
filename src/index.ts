@@ -130,7 +130,7 @@ console.log(customSize);
 // Also allows the console to detect mismatched function return values.
 
 function returnTaxAmt(annualIncome: number) : number {
-    return 0;
+    return 1200;
 }
 
 // for functions returning nothing, just specify the return type as void
@@ -140,3 +140,6 @@ function sideEffectsOnly (argument: Sizer) : void
 {
 
 }
+
+let dummy: number = returnTaxAmt(0);
+console.log(dummy);
