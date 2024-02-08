@@ -29,6 +29,13 @@ let dummyString = lipsum("Tommy");
 console.log("\n");
 console.log(dummyString);
 dummyString = lipsum("Tommy", "Wiseau");
+console.log(dummyString);
+function lipsum2(loremIpsum, dolorSitAmet = "dolor sit amet") {
+    return loremIpsum + " " + dolorSitAmet;
+}
 console.log("\n");
+dummyString = lipsum2("Tommy", "Wiseau");
+console.log(dummyString);
+dummyString = lipsum2("Tommy");
 console.log(dummyString);
 //# sourceMappingURL=index.js.map

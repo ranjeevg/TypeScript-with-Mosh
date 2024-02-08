@@ -189,5 +189,19 @@ console.log("\n");
 console.log(dummyString);
 
 dummyString = lipsum("Tommy", "Wiseau");
+console.log(dummyString);
+
+// we can also specify default values
+function lipsum2 (loremIpsum: string, dolorSitAmet = "dolor sit amet") : string {
+
+    return loremIpsum + " "+ dolorSitAmet;
+}
+
+// demo time
 console.log("\n");
+
+dummyString = lipsum2("Tommy", "Wiseau");
+console.log(dummyString);
+
+dummyString = lipsum2("Tommy");
 console.log(dummyString);
