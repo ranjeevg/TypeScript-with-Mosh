@@ -130,7 +130,7 @@ console.log(customSize);
 // Also allows the console to detect mismatched function return values.
 
 function returnTaxAmt(annualIncome: number) : number {
-    return 1200;
+    return annualIncome * 1200;
 }
 
 // for functions returning nothing, just specify the return type as void
@@ -138,8 +138,14 @@ function returnTaxAmt(annualIncome: number) : number {
 // .. just like in a sensible, statically typed language.
 function sideEffectsOnly (argument: Sizer) : void 
 {
-
+    argument *= 2; // we had to do something in this example - TS compiler won't let us not use the param
 }
 
 let dummy: number = returnTaxAmt(0);
 console.log(dummy);
+
+// amnd apparently tsconfig.json has an option to turn on compiler errors for unused function arguments
+// "noUnusedParameters" : "true"
+
+
+// sideEffe
