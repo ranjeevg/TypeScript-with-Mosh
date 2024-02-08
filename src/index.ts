@@ -120,4 +120,23 @@ let customSize: Sizer = Sizer.NoticeMePapaFlammy;
 
 console.log(customSize);
 
-// note: he mentioned that setting the enums as consts in TS optimizes the generated JS file. I've done that for the enums we've used.
+// note: he mentioned that setting the enums as consts in TS optimizes the generated JS file. 
+// I've done that for the enums we've used.
+
+// FUNCTIONS
+
+// signing return values for functions is best practice, 
+// even though the TS compiler is smart enough to check in most cases.
+// Also allows the console to detect mismatched function return values.
+
+function returnTaxAmt(annualIncome: number) : number {
+    return 0;
+}
+
+// for functions returning nothing, just specify the return type as void
+// and, also, we can force enums and classes as types
+// .. just like in a sensible, statically typed language.
+function sideEffectsOnly (argument: Sizer) : void 
+{
+
+}
