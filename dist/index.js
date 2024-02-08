@@ -20,4 +20,15 @@ function implicitReturnExample(arg) {
 console.log("\n");
 dummy = implicitReturnExample(120);
 console.log(dummy);
+function lipsum(loremIpsum, dolorSitAmet) {
+    if (typeof (dolorSitAmet) === "undefined")
+        return loremIpsum;
+    return loremIpsum + " " + dolorSitAmet;
+}
+let dummyString = lipsum("Tommy");
+console.log("\n");
+console.log(dummyString);
+dummyString = lipsum("Tommy", "Wiseau");
+console.log("\n");
+console.log(dummyString);
 //# sourceMappingURL=index.js.map

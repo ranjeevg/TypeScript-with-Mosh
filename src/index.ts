@@ -173,3 +173,21 @@ console.log("\n"); // for formatting
 dummy = implicitReturnExample(120);
 console.log(dummy);
 
+// you can also mark function parameters as optional by putting a ? next to the name
+// note: this will trigger a compiler error, as the possibility exists that it is undefined 
+//  and not the value specified
+function lipsum (loremIpsum: string, dolorSitAmet? : string) : string {
+
+    // we need to check for if dolorSitAmet is undef or not
+    if (typeof(dolorSitAmet) === "undefined") return loremIpsum;
+
+    return loremIpsum + " " + dolorSitAmet;
+}
+
+let dummyString = lipsum("Tommy");
+console.log("\n");
+console.log(dummyString);
+
+dummyString = lipsum("Tommy", "Wiseau");
+console.log("\n");
+console.log(dummyString);
