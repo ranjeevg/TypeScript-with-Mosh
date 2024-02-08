@@ -154,9 +154,22 @@ console.log(dummy);
 // an example: 
 function implicitReturnExample (arg: number) {
 
+    let x: number = arg;
     if (arg > 25000) return arg * 1200;
 
     // as it is now, if arg is less than that, it returns undefiined
     // let's fix that
+    // let's also use the unused var x somehow
+    x += arg;
     return arg * 1250;
 }
+
+// another setting to check for unused local variables
+// "noUnusedLocals": "true"
+
+// using the same dummy variable from above
+console.log("\n"); // for formatting
+
+dummy = implicitReturnExample(120);
+console.log(dummy);
+
