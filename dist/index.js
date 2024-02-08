@@ -10,4 +10,9 @@ function sideEffectsOnly(argument) {
 }
 let dummy = returnTaxAmt(0);
 console.log(dummy);
+function implicitReturnExample(arg) {
+    if (arg > 25000)
+        return arg * 1200;
+    return arg * 1250;
+}
 //# sourceMappingURL=index.js.map

@@ -147,5 +147,16 @@ console.log(dummy);
 // amnd apparently tsconfig.json has an option to turn on compiler errors for unused function arguments
 // "noUnusedParameters" : "true"
 
+// similarly, we might have an unspecified branch of an if that leads to default return ('undefined' in JS)
+// we can turn on a compiler error for it in tsconfig.json: "noImplicitReturns"
+// turned it on
 
-// sideEffe
+// an example: 
+function implicitReturnExample (arg: number) {
+
+    if (arg > 25000) return arg * 1200;
+
+    // as it is now, if arg is less than that, it returns undefiined
+    // let's fix that
+    return arg * 1250;
+}
